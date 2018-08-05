@@ -2,27 +2,30 @@ package com.kodilla;
 
 public class Calculator {
 
-    public int add(int a, int b){
+    public int add(int a, int b) {
         return a + b;
     }
-    public int subtract (int a, int b){
+
+    public int subtract(int a, int b) {
         return a - b;
     }
-    public int nwd(int a, int b){
+
+    public int nwd(int a, int b) {
         int remainder = b;
-        do { remainder = a % b;
-            if(remainder == 0){
+        do {
+            remainder = a % b;
+            if (remainder == 0) {
                 a = b;
                 remainder = 0;
             } else {
                 a = b;
                 b = remainder;
             }
-        } while (remainder !=0);
+        } while (remainder != 0);
         return b;
     }
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
         Calculator calculator = new Calculator();
         int a = 12;
         int b = 8;
