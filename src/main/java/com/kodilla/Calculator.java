@@ -11,6 +11,9 @@ public class Calculator {
 
     public static void main(String args[]){
         Calculator calculator = new Calculator();
-        System.out.println("Doing addition:..." + calculator.add(1, 2));
+        int a = 1;
+        int b = 2;
+        System.out.println("Doing addition of " + a + " and " + b + " gives " + calculator.add(a, b));
+        System.out.println("Doing subtraction of " + b + " from " + a + " gives " + calculator.subtract(a, b));
     }
 }
